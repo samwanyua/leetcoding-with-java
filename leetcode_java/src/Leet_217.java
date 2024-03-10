@@ -7,6 +7,17 @@ public class Leet_217 {
         int[] nums = {1, 2, 3};
         boolean result = containsDuplicate(nums);
 
+        /*
+         * Alt.
+         * Array.sort(nums);
+         * for(int i = 0; i < nums.length - 1; i++){
+         *      if(nums[i] == nums[i + 1]) return true;
+         * }
+         * 
+         * return false;
+         
+         */
+
         System.out.println("Contains Duplicate: " + result);
     }
     public static boolean containsDuplicate(int[] nums) {
